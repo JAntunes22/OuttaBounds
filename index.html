@@ -55,6 +55,9 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
     </head>
 	
 	<body>
@@ -68,32 +71,17 @@
 			<!-- top-area Start -->
 			<div class="top-area">
 				<div class="header-area">
-					<!-- Start Navigation -->
-				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+					<!--Navigation bar-->
+					<div id="nav-placeholder">
 
-				        <div class="container">
+					</div>
 
-				            <!-- Start Header Navigation -->
-				            <div class="navbar-header">
-				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-				                    <i class="fa fa-bars"></i>
-				                </button>
-				                <a class="navbar-brand" href="index.html">OuttaBounds<span></span></a>
-
-				            </div><!--/.navbar-header-->
-				            <!-- End Header Navigation -->
-
-				            <!-- Collect the nav links, forms, and other content for toggling -->
-				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class=" scroll active"><a href="#home">home</a></li>
-				                    <li class="scroll"><a href="#service">service</a></li>
-				                    <li class="scroll"><a href="#contact">contact</a></li>
-				                </ul><!--/.nav -->
-				            </div><!-- /.navbar-collapse -->
-				        </div><!--/.container-->
-				    </nav><!--/nav-->
-				    <!-- End Navigation -->
+					<script>
+					$(function(){
+					$("#nav-placeholder").load("nav.html");
+					});
+					</script>
+					<!--end of Navigation bar-->
 				</div><!--/.header-area-->
 			    <div class="clearfix"></div>
 
@@ -102,10 +90,11 @@
 
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<h2>get your desired golf trip in resonable price</h2>
+					<h2>The best Golf experiences are coming soon</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   magna aliqua. 
+						Be the first to try our exclusive golfing trips in the Algarve region, Portugal
 					</p>
+					<p>Go OuttaBounds</p>
 					<button class="welcome-btn" onclick="window.location.href=sendEmail()">contact us</button>
 					<script>
 						function sendEmail() {
@@ -125,37 +114,34 @@
 				<div class="service-content">
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
-							<div class="single-service-item">
-								<div class="single-service-icon">
-									<i class="flaticon-car"></i>
+							<a href="courses.html" style="text-decoration: none;">
+								<div class="single-service-item single-service-courses">
+									<h2>Golf Courses</h2>
+									<p>
+										Take a look at the golf courses you can play with us  
+									</p>
 								</div>
-								<h2><a href="#">largest dealership <span> of</span> car</a></h2>
-								<p>
-									Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
-								</p>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div class="single-service-item">
-								<div class="single-service-icon">
-									<i class="flaticon-car-repair"></i>
+							<a href="courses.html" style="text-decoration: none;">
+								<div class="single-service-item single-service-accommodation">
+									<h2>Accommodation</h2>
+									<p>
+										Take a look at where you can stay with us  
+									</p>
 								</div>
-								<h2><a href="#">unlimited repair warrenty</a></h2>
-								<p>
-									Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
-								</p>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div class="single-service-item">
-								<div class="single-service-icon">
-									<i class="flaticon-car-1"></i>
+							<a href="courses.html" style="text-decoration: none;">
+								<div class="single-service-item single-service-experiences">
+									<h2>Experiences</h2>
+									<p>
+										Take a look at the experiences you can have with us  
+									</p>
 								</div>
-								<h2><a href="#">insurence support</a></h2>
-								<p>
-									Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. 
-								</p>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -172,14 +158,13 @@
 						<div class="col-md-3 col-sm-6">
 							<div class="single-footer-widget">
 								<div class="footer-logo">
-									<a href="index.html">OuttaBounds</a>
+									<a href="index.html">OUTTABOUNDS</a>
 								</div>
 								<p>
-									Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.
-								</p>
+									If you have a question that please do not hesitate to contact us at:</p>
 								<div class="footer-contact">
-									<p>info@themesine.com</p>
-									<p>+1 (885) 2563154554</p>
+									<p>info@outtaboundstravel.com</p>
+									<p>+351 962 526 201</p>
 								</div>
 							</div>
 						</div>
@@ -187,20 +172,17 @@
 						
 					</div>
 				</div>
-				<div class="footer-copyright">
-					<div class="row">
-						<div class="col-sm-6">
-							<p>
-								&copy; copyright.designed and developed by OuttaBounds</a>.
-							</p><!--/p-->
-						</div>
-						<div class="col-sm-6">
-							<div class="footer-social">
-								<a href="https://www.instagram.com/outtaboundstravel"><i class="fa fa-instagram"></i></a>	
-							</div>
-						</div>
-					</div>
-				</div><!--/.footer-copyright-->
+				<!--Footer bar-->
+				<div id="footer-placeholder">
+
+				</div>
+
+				<script>
+				$(function(){
+				$("#footer-placeholder").load("footer.html");
+				});
+				</script>
+				<!--end of footer bar-->
 			</div><!--/.container-->
 
 			<div id="scroll-Top">
