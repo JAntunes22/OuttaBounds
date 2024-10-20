@@ -185,7 +185,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s linear;
-    padding: 48px 21px;
+    padding: 20px 21px;
 }
 
 nav.navbar.bootsnav ul.nav > li > a:hover,
@@ -232,12 +232,11 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #186d00;
     padding: 10px;
 }
 
 nav.navbar.bootsnav .navbar-toggle i {
-    color: #186d00;
+    color: white;
 }
 
 /* Mobile Responsiveness */
@@ -246,13 +245,20 @@ nav.navbar.bootsnav .navbar-toggle i {
         width: 100%;
         max-width: 60px;
         margin-right: 0px;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
     }
 
     .navbar-header a.navbar-brand span {
         display: inline-block;
         padding-top: 10px;
     }
+
+    .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand, 
+    .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover, 
+    .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {
+        padding: 5px 0px;
+}
+
     
 }
 
@@ -318,7 +324,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 /*-------------------------------------
         5. Service 
 --------------------------------------*/
-.service { padding: 160px 0 87px;}
+.service { padding: 50px 0 100px;}
 
 .single-service-item{
     text-align: center;
@@ -364,6 +370,42 @@ nav.navbar.bootsnav .navbar-toggle i {
 }
 
 .single-service-experiences:hover {
+    transform: scale(1.05);
+}
+
+.single-service-pack1 {
+    background: url('../images/packs/p1.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+}
+
+.single-service-pack1:hover {
+    transform: scale(1.05);
+}
+
+.single-service-pack2 {
+    background: url('../images/packs/p2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+}
+
+.single-service-pack2:hover {
+    transform: scale(1.05);
+}
+
+.single-service-pack3 {
+    background: url('../images/packs/p3.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+}
+
+.single-service-pack3:hover {
     transform: scale(1.05);
 }
 
@@ -574,7 +616,7 @@ form button[type="submit"]:hover {
   }
 
   #openFormButton {
-    font-size: 1rem; /* Slightly reduce text size on smaller screens */
+    font-size: 1.5rem; /* Slightly reduce text size on smaller screens */
     padding: 12px 24px; /* Adjust padding for smaller screens */
   }
 }
@@ -595,7 +637,19 @@ form button[type="submit"]:hover {
 /*-------------------------------------
         7. 
 --------------------------------------*/
+/*.packs-txt*/
+.packs-txt{
+    text-align: center;
+    padding: 50px;
+}
 
+.packs-txt h2 {
+    font-size: 42px;
+    color: #1a1919;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
 
 /*-------------------------------------       
         8. 
