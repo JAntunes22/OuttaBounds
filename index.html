@@ -67,15 +67,11 @@
 	
 		<!--welcome-hero start -->
 		<section id="home" class="welcome-hero">
-
 			<!-- top-area Start -->
 			<div class="top-area">
 				<div class="header-area">
 					<!--Navigation bar-->
-					<div id="nav-placeholder">
-
-					</div>
-
+					<div id="nav-placeholder"></div>
 					<script>
 					$(function(){
 					$("#nav-placeholder").load("nav.html");
@@ -95,12 +91,41 @@
 						Be the first to try our exclusive golfing trips in the Algarve region, Portugal
 					</p>
 					<p>Go OuttaBounds</p>
-					<button class="welcome-btn" onclick="window.location.href=sendEmail()">contact us</button>
-					<script>
-						function sendEmail() {
-							window.location.href = 'mailto:info@outtaboundstravel.com';
-						}
+					<div class="button-div"><button id="openFormButton">Inquiry</button></div>
+					
+
+					<!-- Email popup form -->
+					<div id="popupForm" class="popup">
+					  <div class="popup-content">
+						<span class="close">&times;</span>
+						<h2>Send an Email</h2>
+						<form id="emailForm">
+						  <label for="name">Your Name:</label><br>
+						  <input type="text" id="name" name="name" required><br>
+						  
+						  <label for="email">Your Email:</label><br>
+						  <input type="email" id="email" name="email" required><br>
+				  
+						  <label for="message">Message:</label><br>
+						  <textarea id="message" name="message" required></textarea><br>
+						  
+						  <button type="submit">Send Email</button>
+						</form>
+					  </div>
+					</div>
+
+					 <!-- Include the EmailJS script -->
+					<script type="text/javascript"
+							src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+					</script>					
+					<script type="text/javascript">
+						// Initialize EmailJS with your User ID
+						(function(){
+						emailjs.init("42awK1IIf_Kx2SeXW"); // Replace with your EmailJS user ID
+						})();
 					</script>
+
+					<!-- End of email popup form -->
 				</div>
 			</div>
 
@@ -158,7 +183,7 @@
 						<div class="col-md-3 col-sm-6">
 							<div class="single-footer-widget">
 								<div class="footer-logo">
-									<a href="index.html">OUTTABOUNDS</a>
+									<a href="/">OUTTABOUNDS</a>
 								</div>
 								<p>
 									If you have a question that please do not hesitate to contact us at:</p>
@@ -217,6 +242,9 @@
 
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
+		<!--Email JS-->
+		<script src="assets/js/emailform.js"></script>
         
     </body>
 	
