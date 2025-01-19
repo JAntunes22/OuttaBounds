@@ -294,6 +294,12 @@ nav.navbar.bootsnav .navbar-toggle i {
     text-transform: uppercase;
     margin-bottom: 45px;
 }
+.welcome-hero-txt h3 {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
 .welcome-hero-txt p {
     font-size: 18px;
     text-transform: initial;
@@ -327,6 +333,8 @@ nav.navbar.bootsnav .navbar-toggle i {
 .service { padding: 50px 0 100px;}
 
 .single-service-item{
+    width: 350px; 
+    height: 250px; 
     text-align: center;
     padding:55px 30px 60px;
     border-radius: 3px;
@@ -337,75 +345,11 @@ nav.navbar.bootsnav .navbar-toggle i {
     -ms-transition:.3s linear; 
     -o-transition:.3s linear;
     transition: .3s linear;
-}
-
-.single-service-courses {
-    background: url('../images/courses/banner.jpg') no-repeat;
-    background-position: center;
     background-size: cover;
-    z-index: 1;
     transition: transform 0.3s ease; 
 }
 
-.single-service-courses:hover {
-    transform: scale(1.05);
-}
-.single-service-accommodation {
-    background: url('../images/accomodation/banner.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.3s ease; 
-}
-
-.single-service-accommodation:hover {
-    transform: scale(1.05);
-}
-.single-service-experiences {
-    background: url('../images/experiences/banner.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.3s ease; 
-}
-
-.single-service-experiences:hover {
-    transform: scale(1.05);
-}
-
-.single-service-pack1 {
-    background: url('../images/packs/p1.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.3s ease; 
-}
-
-.single-service-pack1:hover {
-    transform: scale(1.05);
-}
-
-.single-service-pack2 {
-    background: url('../images/packs/p2.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.3s ease; 
-}
-
-.single-service-pack2:hover {
-    transform: scale(1.05);
-}
-
-.single-service-pack3 {
-    background: url('../images/packs/p3.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.3s ease; 
-}
-
-.single-service-pack3:hover {
+.single-service-item:hover {
     transform: scale(1.05);
 }
 
@@ -417,8 +361,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     font-size: 20px;
     margin: 35px 0 10px;
     color: #fff;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1); 
-    
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 .single-service-item h2 span {
     text-transform:  lowercase;   
@@ -853,23 +796,42 @@ form button[type="submit"]:hover {
 /*-------------------------------------
             Courses
 --------------------------------------*/
-.welcome-courses {
+.welcome-courses{
     position: relative;
-    background: url('../images/courses/banner.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
+    overflow: hidden; /* Ensures the pseudo-element doesn't spill out */
 }
-.welcome-courses:before {
+.welcome-courses:before{
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(72, 72, 72, 0.6);
+    background: rgba(72, 72, 72, 0.6); /* Faded background */
+    z-index: 1; /* Layer below the text */
 }
-.header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
+.welcome-course-txt{
+    position: relative;
+    text-align: center;
+    padding: 290px 0 372px;
+    z-index: 2; /* Ensures the text appears above the overlay */
+}
+.welcome-course-txt h2{
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.welcome-course-txt h3{
+    font-size: 27px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
 
 .course-item{
     text-align: center;
@@ -909,5 +871,11 @@ form button[type="submit"]:hover {
     margin-left: -10px;
 }
 
+
+.separator-line{
+    height: 100px;
+    background: #444444; /* Base color */
+    margin: 40px 0;
+}
 
 /*========================================
