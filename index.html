@@ -85,45 +85,193 @@
 			<!-- top-area End -->
 
 			<div class="container">
-				<div class="welcome-hero-txt">
+				<div>
+					<div class="welcome-hero-txt">	
 					<h2>The best Golf experiences are coming soon</h2>
-					<p>
-						Be the first to try our exclusive golfing trips in the Algarve region, Portugal
-					</p>
+					<p>Be the first to try our exclusive golfing trips in the Algarve region, Portugal</p>
 					<p>Go OuttaBounds</p>
 					<div class="button-div"><button id="openFormButton">Inquiry</button></div>
-					
-
-					<!-- Email popup form -->
-					<div id="popupForm" class="popup">
-					  <div class="popup-content">
-						<span class="close">&times;</span>
-						<h2>Send an Email</h2>
-						<form id="emailForm">
-						  <label for="name">Your Name:</label><br>
-						  <input type="text" id="name" name="name" required><br>
-						  
-						  <label for="email">Your Email:</label><br>
-						  <input type="email" id="email" name="email" required><br>
-				  
-						  <label for="message">Message:</label><br>
-						  <textarea id="message" name="message" required></textarea><br>
-						  
-						  <button type="submit">Send Email</button>
-						</form>
-					  </div>
 					</div>
 
-					 <!-- Include the EmailJS script -->
-					<script type="text/javascript"
+				<div id="popupSuccess" class="popup" style="display: none;">
+					<div class="popup-content">
+						<label>Thank you for your inquiry, we'll contact you soon as possible! &#127948;</label>
+					</div>
+				</div>	
+
+				  <!-- Email popup form -->
+				  <div id="popupForm" class="popup">
+					<div class="popup-content">
+					  <span class="close">&times;</span>
+					  <h2>Plan Your Dream Trip</h2>
+					  <form id="emailForm">
+						<!-- Page 1: Personal Details -->
+						<div class="form-page" id="page-1">
+							<label>Title*</label>
+							<div class="radio-group">
+							  <label><input type="radio" name="title" value="Mr" required> Mr</label>
+							  <label><input type="radio" name="title" value="Mrs" required> Mrs</label>
+							  <label><input type="radio" name="title" value="Ms" required> Ms</label>
+							</div><br>
+							<label for="client-name">Name*</label>
+							<input type="text" id="client-name" name="client-name" placeholder="Your name here" required></textarea><br>
+
+							<label for="client-email">Email*</label>
+							<input type="text" id="client-email" name="client-name" rows="1" placeholder="We will contact you through this email" required></textarea><br>
+													
+							<label for="group-size">Group size*</label>
+							<select id="group-size" name="group-size" required>
+							<option value="">Select an option...</option>
+							<option value="just-me">Solo player</option>
+							<option value="couple">Couple</option>
+							<option value="small-group">Small Group (4-6)</option>
+							<option value="large-group">Large Group (7+)</option>
+							<option value="small-group-couples">Small Group with Partners (4-6 x2)</option>
+							<option value="large-group-couples">Large Group with Partners (7+ x2)</option>
+							</select><br>
+
+							<label for="group-age-range">Group age range*</label>
+							<select id="group-age-range" name="group-age-range" required>
+								<option value="">Select an option...</option>
+								<option value="18-30">18-30</option>
+								<option value="31-45">31-45</option>
+								<option value="46-60">46-60</option>
+								<option value="61+">61+</option>
+								<option value="mixed-ages">Mixed Ages</option>
+							</select><br>
+						</div>
+
+						<!-- Page 2: Preferences -->
+						<div class="form-page" id="page-2" style="display: none;">
+						  <label for="dream-experience">What's your dream golf experience?*</label>
+						  <select id="dream-experience" name="dream-experience" required>
+							<option value="">Select an option...</option>
+							<option value="relaxing">Relaxing</option>
+							<option value="competitive">Competitive</option>
+							<option value="social">Social</option>
+							<option value="family-friendly">Family-Friendly</option>
+							<option value="adventurous">Adventurous</option>
+						  </select><br>
+			  
+						  <label for="favorite-part">What's your favorite part of a golf trip?*</label>
+						  <select id="favorite-part" name="favorite-part" required>
+							<option value="">Select an option...</option>
+							<option value="game">The Game</option>
+							<option value="scenery">The Scenery</option>
+							<option value="food">The Food</option>
+							<option value="socializing">The Socializing</option>
+						  </select><br>
+			  
+						  <label for="skill-level">What's your skill level?*</label>
+						  <select id="skill-level" name="skill-level" required>
+							<option value="">Select an option...</option>
+							<option value="beginner">Beginner</option>
+							<option value="intermediate">Intermediate</option>
+							<option value="advanced">Advanced</option>
+							<option value="pro">Pro</option>
+						  </select><br>
+						</div>
+			  
+						<!-- Page 3: Trip Preferences -->
+						<div class="form-page" id="page-3" style="display: none;">
+							<label for="budget">What's your budget per person?*</label>
+							<input type="range" id="budget" name="budget" min="500" max="10000" step="100" value="2000" required>
+							<p><span id="budget-value">2000</span>€</p><br>
+						
+							<label for="accommodation">What type of accommodation do you prefer?*</label>
+							<select id="accommodation" name="accommodation" required>
+							<option value="">Select an option...</option>
+							<option value="luxury-villa">Luxury Villa</option>
+							<option value="boutique-hotel">Boutique Hotel</option>
+							<option value="beachfront-house">Beachfront House</option>
+							<option value="golf-resort">Golf Resort</option>
+							</select><br>
+						
+							<label for="travel-season">What's your preferred travel season?*</label>
+							<select id="travel-season" name="travel-season" required>
+								<option value="">Select an option...</option>
+								<option value="spring">Spring</option>
+								<option value="summer">Summer</option>
+								<option value="autumn">Autumn</option>
+								<option value="winter">Winter</option>
+							</select><br>
+						</div>
+			  
+						<!-- Page 4: Activities & Customization -->
+						<div class="form-page" id="page-4" style="display: none;">
+							<label>Select your preferred golf courses:</label><br>
+							<div class="image-selector">
+								<div class="image-option" data-value="Amendoeira">
+								<img src="assets/images/courses/amendoeira.jpg" alt="Amendoeira Golf Course">
+								<p>Amendoeira</p>
+								</div>
+								<div class="image-option" data-value="Espiche">
+								<img src="assets/images/courses/espiche.jpg" alt="Espiche Golf Course">
+								<p>Espiche</p>
+								</div>
+								<div class="image-option" data-value="Palmares">
+								<img src="assets/images/courses/palmares.jpg" alt="Palmares Golf Course">
+								<p>Palmares</p>
+								</div>
+							</div><br>
+			  
+						  <label>What non-golf activities would you like to include?</label>
+						  <div class="checkbox-group horizontal">
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="wine-tasting"> Wine Tasting</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="beach-day"> Beach Day</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="cultural-tours"> Cultural or Boat Tours</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="wine-tasting"> Water Sports</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="beach-day"> Boat Party</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="padel-tennis"> Padel or Tennis</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="kart-racing"> Kart Racing</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="nightlife-events"> Nightlife Events</p><br>
+								<p class="checkbox-activities"><input type="checkbox" name="activities" value="culinary-adventure"> Culinary Adventure</p><br>
+						  </div>
+						</div>
+			  
+						<!-- Page 5: Final Details -->
+						<div class="form-page" id="page-5" style="display: none;">				
+							<label for="equipment-rental">Do you need golf equipment rental?*</label>
+							<select id="equipment-rental" name="equipment-rental" required>
+							<option value="">Select an option...</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							</select><br>
+
+							<!-- Free text box -->
+							<label for="other-details">Please specify other details:</label>
+							<textarea id="other-details" name="other-details" rows="5" placeholder="We will do our best to cater the trip to your likings"></textarea><br>
+						
+							<p>Please fill all the required information before submiting</p>
+						</div>
+			  
+						<!-- Navigation Buttons -->
+						<div class="form-navigation">
+						  <button type="button" class="prev-button"><i class="fas fa-arrow-left"></i> Back</button>
+						  <button type="button" class="next-button">Next <i class="fas fa-arrow-right"></i></button>
+						  <button type="submit" style="display: none;">Submit</button>
+						</div>
+					  </form>
+					</div>
+				  </div>
+				  <script type="text/javascript"
 							src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-					</script>					
-					<script type="text/javascript">
-						// Initialize EmailJS with your User ID
-						(function(){
-						emailjs.init("42awK1IIf_Kx2SeXW"); // Replace with your EmailJS user ID
-						})();
-					</script>
+					</script>	
+				</div>
+			  </div>
+			  
+			  <!-- Confetti Animation -->
+			  <canvas id="confetti-canvas" style="display: none;"></canvas>
+			  
+			  <!-- Include FontAwesome for Icons -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+			  
+			  <!-- Include Leaflet for Map -->
+			  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+			  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+			  
+			  <!-- Include Confetti Library -->
+			  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 					<!-- End of email popup form -->
 				</div>
@@ -162,45 +310,17 @@
 							</a>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<a href="courses.html" style="text-decoration: none;">
-								<div class="single-service-item single-service-experiences">
-									<h2>Pack 3</h2>
+							<a href="courses/espiche.html" style="text-decoration: none;">
+								<div class="single-service-item"  style="background-image: url('/assets/images/courses/espiche.jpg');">
+									<h2>Espiche</h2>
 									<p>
-										Take a look at the experiences you can have with us  
+										In the middle of nature  
 									</p>
 								</div>
 							</a>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<a href="courses.html" style="text-decoration: none;">
-								<div class="single-service-item single-service-pack1">
-									<h2>Pack 4</h2>
-									<p>
-										Take a look at the golf courses you can play with us  
-									</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<a href="courses.html" style="text-decoration: none;">
-								<div class="single-service-item single-service-pack2">
-									<h2>Pack 5</h2>
-									<p>
-										Take a look at where you can stay with us  
-									</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<a href="courses.html" style="text-decoration: none;">
-								<div class="single-service-item single-service-pack3">
-									<h2>Pack 6</h2>
-									<p>
-										Take a look at the experiences you can have with us  
-									</p>
-								</div>
-							</a>
-						</div>
+						
+
 					</div>
 				</div>
 			</div><!--/.container-->
@@ -373,7 +493,7 @@
 									<a href="/">OUTTABOUNDS</a>
 								</div>
 								<p>
-									If you have a question that please do not hesitate to contact us at:</p>
+									If you have a question please contact us at:</p>
 								<div class="footer-contact">
 									<p>info@outtaboundstravel.com</p>
 									<p>+351 962 526 201</p>
