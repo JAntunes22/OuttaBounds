@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "House 1",
+        "subtitle": "Algarve - Portugal",
+        "description": "house 1",
+        "image": "/assets/images/houses/house1.jpg"
+    },
+    {
+       "id": 2,
+        "title": "House 2",
+        "subtitle": "Algarve - Portugal",
+        "description": "house 2",
+        "image": "/assets/images/houses/house2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "House 3",
+        "subtitle": "Algarve - Portugal",
+        "description": "house 3",
+        "image": "/assets/images/houses/house3.jpg"
+    }
+]

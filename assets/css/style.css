@@ -70,6 +70,7 @@ p {
 	font-size:16px;
     line-height: 1.8;
     text-transform: initial;
+    text-align: justify;
 }
 img{border:none;max-width:100%; height:auto;}
 ul{
@@ -293,12 +294,14 @@ nav.navbar.bootsnav .navbar-toggle i {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 45px;
+    text-align: center;
 }
 .welcome-hero-txt h3 {
     font-size: 27px;
     color: #fff;
     font-weight: 400;
     margin-bottom: 45px;
+    text-align: center;
 }
 .welcome-hero-txt p {
     font-size: 18px;
@@ -307,6 +310,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     font-weight: 500;
     max-width: 735px;
     margin: 0 auto;
+    text-align: center;
 }
 .welcome-btn {
     display: inline-block;
@@ -767,8 +771,18 @@ form textarea:focus {
     color: #1a1919;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+.packs-txt p {
+    margin: 0 15%;
+}
+
+@media (max-width: 480px) {
+    .packs-txt p {
+        margin: 0;
+    }
+  }
 
 /*-------------------------------------       
         8. 
@@ -1054,7 +1068,7 @@ form textarea:focus {
     margin: 40px 0;
 }
 
-#courses .courses-row {
+.courses-row {
     display: flex;
     justify-content: center;
     gap: 20px 40px;
@@ -1062,7 +1076,7 @@ form textarea:focus {
     text-align: center;
 }
 
-#courses .single-service-item {
+.single-service-item {
     width: 350px;
     height: 190px;
     display: flex;
@@ -1077,24 +1091,24 @@ form textarea:focus {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-#courses .single-service-item h2 {
+.single-service-item h2 {
     margin: 0;
     font-size: 2rem;
 }
 
-#courses .single-service-item p {
+.single-service-item p {
     font-size: 1.4rem;
     margin: 5px 0 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #courses .courses-row {
+    .courses-row {
         flex-direction: column;
         align-items: center;
     }
 
-    #courses .single-service-item {
+    .single-service-item {
         width: 270px;
         height: 150px;
     }

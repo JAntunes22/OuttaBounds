@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Wine Tasting Tour",
+        "subtitle": "Algarve Vineyards",
+        "description": "Discover the rich flavors of Algarve wines with our exclusive wine tasting tour. Perfect for wine enthusiasts and casual drinkers alike.",
+        "image": "/assets/images/experiences/wine.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Boat",
+        "subtitle": "Algarve - Portugal",
+        "description": "Boat tour",
+        "image": "/assets/images/experiences/boat.png"
+    },
+    {
+        "id": 3,
+        "title": "Beach",
+        "subtitle": "Algarve - Portugal",
+        "description": "Go to beach",
+        "image": "/assets/images/experiences/beach.jpg"
+    }
+]

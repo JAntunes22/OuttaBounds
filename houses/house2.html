@@ -88,7 +88,7 @@
         <!-- Load Dynamic Content -->
          <script>
             $(document).ready(function () {
-                fetch('/data/courses.json')
+                fetch('/data/houses.json')
                     .then(response => response.json())
                     .then(data => {
                         const content = data.find(item => item.id === 2);

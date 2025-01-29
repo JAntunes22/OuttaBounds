@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Palmares Ocean Living & Golf Resort",
+        "subtitle": "Lagos, Algarve - Portugal",
+        "description": "The natural beauty of Palmares has always been evident, however it has taken visionaries to develop the resort into the unique destination that it is today. Originally, Palmares was owned by a Portuguese family who first built a golf course on the site in 1975. In 2001, one of the largest Portuguese companies – Sonae – bought Palmares, and in December 2003 Palmares was bought by family owned company Onyria Golf Resorts. It was only in December 2008 that a permit for the development of the land for real estate was granted. In 2011, a new golf course on-site was inaugurated. In November 2017, Palmares was acquired in a joint venture by Kronos Homes, one of the most prestigious residential developers in the sector and a large international investment fund. From 26 September 2019, Palmares moves forward into its next chapter, as the resort itself is officially launched, finally bringing to fruition the true potential of this stunning location. In  the end of 2023, the resort was acquired by Arrow Global.",
+        "image": "/assets/images/courses/palmares.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Amendoeira",
+        "subtitle": "Armação de Pêra, Algarve - Portugal",
+        "description": "Discover a hidden gem in the heart of the stunning Algarve countryside. Nestlednear the historic town of Silves with spanning 270 hectares of breathing landscape surrounded by the scenic Monchique mountains and picturesque valleys of almond and olive trees, Amendoeira offers a peaceful retreat just minutes from the vibrant beach town of Armação de Pêra. Whether you're drawn by the allure of two award-winning golf courses—the renowned Faldo Course and O'Connor Jnr Course— or the Moorish-inspired arquitecture of our elegant accommodations, Amendoeira promises a truly unforgettable experience. Whether you’re seeking a golf escape, a family vacation, or a relaxing getaway, the resort offers unparalleled hospitality, exceptional facilities and service ensuring the perfect balance of leisure and tranquility.",
+        "image": "/assets/images/courses/amendoeira.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Espiche",
+        "subtitle": "Lagos, Algarve - Portugal",
+        "description": "Experience golf like never before at Espiche Golf Course, a jewel nestled in the heart of the Algarve. With an impressive 18-hole layout, this par 72 course offers an unparalleled golfing experience where challenge and beauty seamlessly blend. Its lakes, streams, and indigenous plantings enhance and enrich the biodiversity of the area. Our golf course in Lagos, Portugal, is a testament to precision and design. The 5,890 metres (6,441 yards) of meticulously crafted fairways and greens are set against the stunning backdrop of the Algarve’s natural beauty. Whether you’re an experienced golfer or a beginner looking for a memorable round, Espiche Golf Course promises an adventure for all levels.",
+        "image": "/assets/images/courses/espiche.jpg"
+    }
+
+]
